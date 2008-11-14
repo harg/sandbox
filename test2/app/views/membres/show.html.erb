@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @membre.name %>
+</p>
+
+<p>
+  <b>Prenom:</b>
+  <%=h @membre.prenom %>
+</p>
+
+
+<%= link_to 'Edit', edit_membre_path(@membre) %> |
+<%= link_to 'Back', membres_path %>

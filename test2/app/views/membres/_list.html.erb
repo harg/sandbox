@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Prenom</th>
+  </tr>
+
+<% for membre in @membres %>
+  <tr>
+    <td><%=h membre.name %></td>
+    <td><%=h membre.prenom %></td>
+    <td><%= link_to 'Show', membre %></td>
+    <td><%= link_to 'Edit', edit_membre_path(membre) %></td>
+    <td><%= link_to 'Destroy', membre, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+
+</table>

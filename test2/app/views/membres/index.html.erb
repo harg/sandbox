@@ -1,0 +1,18 @@
+<h1>Listing membres</h1>
+<%= javascript_include_tag :defaults %>
+<div id="list">
+	<%= render :partial => "list" %>
+</div>
+
+<br />
+<%= link_to_remote( "Add a new member",
+                         :update => "result",
+                         :url =>{ :action => :new,:controller=>:membres}) %>
+<div id="result">
+</div>
+
+<div id="result2">
+</div>
+
+
+<%= link_to 'New membre', new_membre_path %>
